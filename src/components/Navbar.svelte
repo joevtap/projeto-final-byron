@@ -15,7 +15,7 @@
     <li class="text-slate-700 hover:text-slate-500 py-2 mr-14"><a href=".">Times</a></li>
     <li class="text-slate-700 hover:text-slate-500 py-2 "><a href=".">Redes sociais</a></li>
   </ul>
-  <button on:click={toggleNav}>Open</button>
+  <button on:click={toggleNav} class="p-2 text-slate-700">Menu</button>
 </nav>
 
 <style >
