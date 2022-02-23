@@ -1,3 +1,9 @@
+<script>
+  import Navbar from "./components/Navbar.svelte";
+
+</script>
+
+<Navbar />
 <h1>Hello world</h1>
 
 <style lang="postcss" global>
