@@ -20,7 +20,7 @@
 
 <style >
   nav {
-    backdrop-filter: blur(24px);
+    backdrop-filter: blur(8px);
     box-shadow: 0px 12px 40px -12px rgba(51, 65, 85, 0.08);
   }
 
