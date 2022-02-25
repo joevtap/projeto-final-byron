@@ -14,13 +14,11 @@
   <img class="w-12 object-contain" {src} alt="League of Byron" />
   <ul class="flex flex-wrap items-center" class:nav-open={isNavOpen}>
     <li class="text-slate-700 hover:text-slate-500 py-2 mr-14">
-      <a href="#mostre-sua-torcida">Mostre sua torcida</a>
+      <a href="#mostre-sua-torcida" on:click={toggleNav()}>Mostre sua torcida</a
+      >
     </li>
-    <li class="text-slate-700 hover:text-slate-500 py-2 mr-14">
-      <a href="#times">Times</a>
-    </li>
-    <li class="text-slate-700 hover:text-slate-500 py-2 ">
-      <a href="#midia">Redes sociais</a>
+    <li class="text-slate-700 hover:text-slate-500 py-2">
+      <a href="#times" on:click={toggleNav()}>Times</a>
     </li>
   </ul>
   <button on:click={toggleNav} class="p-2 text-slate-700">Menu</button>

@@ -195,6 +195,7 @@
           type="text"
           bind:value={textInput}
           on:keyup={handleEnter}
+          placeholder="Mande sua mensagem"
           class="h-12 flex-grow rounded-full bg-slate-200 border-slate-300 border-[1px] pl-4 py-2 pr-2 text-slate-800"
         />
         <button
