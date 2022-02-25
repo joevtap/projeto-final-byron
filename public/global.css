@@ -9,3 +9,16 @@ a {
   color: #121212;
   text-decoration: none;
 }
+
+/* Correcao button hero com conflito */
+
+#button-hero {
+  margin-right: 24px;
+}
+
+@media screen and (max-width: 768px) {
+  #button-hero {
+    margin: 0;
+    margin-bottom: 16px;
+  }
+}
