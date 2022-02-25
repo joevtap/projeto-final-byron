@@ -7,70 +7,60 @@
       shortName: "FUR",
       image: "assets/furia.png",
       description: "",
-      viewMore: "",
     },
     "KaBuM! e-Sports": {
       name: "KaBuM! e-Sports",
       shortName: "KBM",
       image: "assets/kbm.png",
       description: "",
-      viewMore: "",
     },
     Liberty: {
       name: "Liberty",
       shortName: "LBR",
       image: "assets/liberty.png",
       description: "",
-      viewMore: "",
     },
     LOUD: {
       name: "LOUD",
-      shortName: "LBR",
+      shortName: "LLL",
       image: "assets/loud.png",
       description: "",
-      viewMore: "",
     },
     "RED Canids": {
       name: "RED Canids",
       shortName: "RED",
       image: "assets/red.png",
       description: "",
-      viewMore: "",
     },
     "Netshoes Miners": {
       name: "Netshoes Miners",
       shortName: "NMG",
       image: "assets/netshoesminers.png",
       description: "",
-      viewMore: "",
     },
     "paiN Gaming": {
       name: "paiN Gaming",
       shortName: "PNG",
       image: "assets/pain.png",
       description: "",
-      viewMore: "",
     },
     "Flamengo Esports": {
       name: "Flamengo Esports",
       shortName: "FLA",
       image: "assets/flamengo.png",
       description: "",
-      viewMore: "",
     },
     INTZ: {
       name: "INTZ",
       shortName: "ITZ",
       image: "assets/INTZlogo_square.png",
       description: "",
-      viewMore: "",
     },
     "Rengsa Esports": {
       name: "Rengsa Esports",
       shortName: "RNS",
       image: "assets/rengsa.png",
       description: "",
-      viewMore: "",
     },
   };
 </script>
@@ -109,7 +99,9 @@
 
 <style>
   section {
-    background-image: url("/assets/background-pattern.png");
+    background-image: url("/assets/background-pattern.png"),
+      linear-gradient(180deg, #f1f5f9 0%, #ffffff 100%);
+    box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.12);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

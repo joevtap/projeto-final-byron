@@ -1,11 +1,18 @@
 <script>
+  import { navigate } from "svelte-routing";
+
   export let team = {
     name: "",
     shortName: "",
     description: "",
-    viewMore: "",
     image: "",
   };
+
+  function goTo() {
+    setTimeout(() => {
+      navigate("/team/" + team.shortName, { replace: true });
+    }, 10);
+  }
 </script>
 
 <div
@@ -48,7 +55,9 @@
       </div>
       <div class="modal-footer">
         <a
-          href={team.viewMore}
+          href={"/" + team.shortName}
+          on:click={goTo}
+          data-bs-dismiss="modal"
           class="block p-2 cursor-pointer text-sky-700 font-medium text-base"
           >Ver mais</a
         >
