@@ -4,7 +4,8 @@
 
   let teams = {
     LLL: {
-      logo: "",
+      fullName: "LOUD",
+      logo: "../assets/loud.png",
       players: {
         top: {
           name: "",
@@ -40,3 +41,5 @@
   href="."
   css={`${teams[team].colors.button} hover:bg-green-400`}>Clique aqui</Button
 >
+
+<img src={teams[team].logo} alt={teams[team].logo} />
