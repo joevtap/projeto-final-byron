@@ -1,4 +1,6 @@
 <script>
+  import { fly } from "svelte/transition";
+
   let teams = [
     {
       id: 1,
@@ -169,7 +171,10 @@
         class="flex flex-col w-full gap-6 overflow-y-scroll overflow-x-hidden"
       >
         {#each messages as message (message.id)}
-          <div class="flex items-start gap-4">
+          <div
+            class="flex items-start gap-4"
+            transition:fly={{ y: 5, duration: 300 }}
+          >
             <img
               class="rounded-full w-12 h-12 object-cover"
               src={message.image}
@@ -206,6 +211,9 @@
 <style>
   section {
     background: linear-gradient(180deg, #f1f5f9 0%, #ffffff 100%);
+    opacity: 0;
+    transform: translateY(50%);
+    animation: fade 600ms forwards 400ms;
   }
 
   section > div {
@@ -225,5 +233,12 @@
   #stats::-webkit-scrollbar-thumb,
   #chat > div:first-child::-webkit-scrollbar-thumb {
     @apply bg-slate-300 rounded-full;
+  }
+
+  @keyframes fade {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
   }
 </style>

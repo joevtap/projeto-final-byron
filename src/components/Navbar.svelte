@@ -30,6 +30,9 @@
   nav {
     backdrop-filter: blur(8px);
     box-shadow: 0px 12px 40px -12px rgba(51, 65, 85, 0.08);
+    opacity: 0;
+    transform: translateY(-100%);
+    animation: fade forwards 300ms ease-out 300ms;
   }
 
   button {
@@ -72,6 +75,13 @@
       opacity: 1;
       pointer-events: all;
       margin-top: 56px;
+    }
+  }
+
+  @keyframes fade {
+    to {
+      opacity: 1;
+      transform: translateY(0);
     }
   }
 </style>
