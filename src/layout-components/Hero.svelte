@@ -16,10 +16,12 @@
     Chat e estatísticas em tempo real para torcer e acompanhar
   </p>
   <div class="flex flex-col items-center md:flex-row">
-    <Button cssId="button-hero" href="http://" style="filled"
+    <Button cssId="button-hero" href="#times" style="filled"
       >Conheça os times</Button
     >
-    <Button href="http://" style="outline">Mostre sua torcida</Button>
+    <Button href="#mostre-sua-torcida" style="outline"
+      >Mostre sua torcida</Button
+    >
   </div>
 </section>
 
