@@ -1,5 +1,4 @@
 <script>
-  import Navbar from "./components/Navbar.svelte";
   import Home from "./pages/Home.svelte";
   import Team from "./pages/Team.svelte";
   import { Router, Route, Link } from "svelte-routing";
@@ -8,7 +7,6 @@
 </script>
 
 <Router {url}>
-  <Navbar />
   <div>
     <Route path="team/:team" let:params><Team team={params.team} /></Route>
     <Route path="/"><Home /></Route>
