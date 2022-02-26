@@ -14,7 +14,7 @@
   <div
     class="z-50 fixed top-0 left-0 w-screen h-screen bg-slate-50 flex items-center justify-center"
     transition:fade
-    class:pointer-events-none={isLoading}
+    class:pointer-events-none={!isLoading}
   >
     <div
       id="spinner"
