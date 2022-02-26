@@ -62,8 +62,9 @@
 
 <section
   id="Players"
-  class="py-20 flex flex-col justify-center items-center px-4 bg-[url('{team.backgroundPattern}')] {team
-    .colors.grad_two}"
+  class="py-20 flex flex-col justify-center items-center px-4 {team.colors
+    .grad_two}"
+  style="background: url({team.backgroundPattern})"
 >
   <h2
     class="{team.colors.title_players} p-3 border-gray-200 text-3xl font-bold"
