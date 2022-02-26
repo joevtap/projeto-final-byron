@@ -1,109 +1,65 @@
-*Psst — looking for a more complete solution? Check out [SvelteKit](https://kit.svelte.dev), the official framework for building web applications of all sizes, with a beautiful development experience and flexible filesystem-based routing.*
+![cover](./readme_files/cover.png)
 
-*Looking for a shareable component template instead? You can [use SvelteKit for that as well](https://kit.svelte.dev/docs#packaging) or the older [sveltejs/component-template](https://github.com/sveltejs/component-template)*
+# League of byron
+
+Mostre sua torcida para o seu time no CBLOL 2022
+
+> Projeto final para o processo trainee da EJ byron.solutions
 
 ---
 
-# svelte app
+## Índice
 
-This is a project template for [Svelte](https://svelte.dev) apps. It lives at https://github.com/sveltejs/template.
+- [Ideia](#ideia)
+- [Design](#design)
+- [Tecnologias Utilizadas](#tecnologias-utilizadas)
+- [Como rodar o projeto](#como-rodar-o-projeto)
+- [Equipe](#equipe)
 
-To create a new project based on this template using [degit](https://github.com/Rich-Harris/degit):
+## Ideia
 
-```bash
-npx degit sveltejs/template svelte-app
-cd svelte-app
-```
+Esta é uma landing page criada como projeto para o processo trainee da EJ byron.solutios.
 
-*Note that you will need to have [Node.js](https://nodejs.org) installed.*
+A dupla foi instruída a fazer um trabalho que utilizasse as tecnologias aprendidas na capacitação do processo trainee e, assim, criou um app fictício de chat e estatísticas para o Campeonato Brasileiro de League of Legends (CBLOL)
 
+## Design
 
-## Get started
+O design da interface foi feito por meio da utilização da ferramenta de prototipação Figma. Porém o mesmo não está completo devido aos atrasos para o desenvolvimento e a priorização da entrega.
 
-Install the dependencies...
+Acesse o projeto no Figma (WIP) [clicando aqui](https://www.figma.com/file/kJ1Qp38E62v6dv5SjuVGR8/Ieague-of-byron?node-id=115%3A9)
 
-```bash
-cd svelte-app
-npm install
-```
+## Tecnologias Utilizadas
 
-...then start [Rollup](https://rollupjs.org):
+Foram utilizadas as tecnologias aprendidas na capacitação do processo trainee, com a adição do Svelte e do Tailwind CSS
 
-```bash
-npm run dev
-```
+- HTML, CSS, Javascript
+- Svelte
+- Tailwind CSS
+- Bootstrap
 
-Navigate to [localhost:8080](http://localhost:8080). You should see your app running. Edit a component file in `src`, save it, and reload the page to see your changes.
+## Como rodar o projeto
 
-By default, the server will only respond to requests from localhost. To allow connections from other computers, edit the `sirv` commands in package.json to include the option `--host 0.0.0.0`.
+Para rodar o projeto, primeiro é preciso cloná-lo em sua máquina local. Para fazer isso, insira no terminal (na pasta de destino desejada)
 
-If you're using [Visual Studio Code](https://code.visualstudio.com/) we recommend installing the official extension [Svelte for VS Code](https://marketplace.visualstudio.com/items?itemName=svelte.svelte-vscode). If you are using other editors you may need to install a plugin in order to get syntax highlighting and intellisense.
+> git clone https://github.com/joevtap/projeto-final-byron.git
 
-## Building and running in production mode
+Depois de clonar, navegue até a raíz do projeto
 
-To create an optimised version of the app:
+> cd projeto-final-byron
 
-```bash
-npm run build
-```
+Instale as dependências com
 
-You can run the newly built app with `npm run start`. This uses [sirv](https://github.com/lukeed/sirv), which is included in your package.json's `dependencies` so that the app will work when you deploy to platforms like [Heroku](https://heroku.com).
+> npm install
 
+Inicie o servidor de desenvolvimento com
 
-## Single-page app mode
+> npm run dev
 
-By default, sirv will only respond to requests that match files in `public`. This is to maximise compatibility with static fileservers, allowing you to deploy your app anywhere.
+### Preview
 
-If you're building a single-page app (SPA) with multiple routes, sirv needs to be able to respond to requests for *any* path. You can make it so by editing the `"start"` command in package.json:
+Você também pode acessar o preview do projeto [clicando aqui](https://projeto-final-byron.vercel.app/)
 
-```js
-"start": "sirv public --single"
-```
+## Equipe
 
-## Using TypeScript
-
-This template comes with a script to set up a TypeScript development environment, you can run it immediately after cloning the template with:
-
-```bash
-node scripts/setupTypeScript.js
-```
-
-Or remove the script via:
-
-```bash
-rm scripts/setupTypeScript.js
-```
-
-If you want to use `baseUrl` or `path` aliases within your `tsconfig`, you need to set up `@rollup/plugin-alias` to tell Rollup to resolve the aliases. For more info, see [this StackOverflow question](https://stackoverflow.com/questions/63427935/setup-tsconfig-path-in-svelte).
-
-## Deploying to the web
-
-### With [Vercel](https://vercel.com)
-
-Install `vercel` if you haven't already:
-
-```bash
-npm install -g vercel
-```
-
-Then, from within your project folder:
-
-```bash
-cd public
-vercel deploy --name my-project
-```
-
-### With [surge](https://surge.sh/)
-
-Install `surge` if you haven't already:
-
-```bash
-npm install -g surge
-```
-
-Then, from within your project folder:
-
-```bash
-npm run build
-surge public my-project.surge.sh
-```
+- [Ana Maísa](https://github.com/AnaMaisaUnifei)
+- [Joel Vítor](https://github.com/joevtap)
