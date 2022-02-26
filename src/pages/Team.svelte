@@ -3,6 +3,7 @@
   import HeroTeam from "../layout-components/HeroTeam.svelte";
   import LastGame from "../layout-components/LastGame.svelte";
   import Players from "../layout-components/Players.svelte";
+  import Navbar from "../components/Navbar.svelte";
   import { onMount } from "svelte";
 
   onMount(() => {
@@ -618,6 +619,7 @@
   };
 </script>
 
+<Navbar type="back" color={teams[team].colors.title_main} />
 <HeroTeam team={teams[team]} />
 <LastGame team={teams[team]} />
 <Players team={teams[team]} />

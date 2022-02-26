@@ -1,26 +1,39 @@
 <script>
+  import { Link } from "svelte-routing";
+
   const src = "assets/Logo.svg";
   let isNavOpen = false;
+  export let type = "home"; // home or back
+  export let color = "text-white";
 
   function toggleNav() {
     isNavOpen = !isNavOpen;
   }
 </script>
 
-<nav
-  class="bg-white/25 fixed z-10 w-full flex items-center justify-between px-16 h-16"
->
-  <img class="w-12 object-contain" {src} alt="League of Byron" />
-  <ul class="flex flex-wrap items-center" class:nav-open={isNavOpen}>
-    <li class="text-slate-700 hover:text-slate-500 py-2 mr-14">
-      <a href="#mostre-sua-torcida" on:click={toggleNav}>Mostre sua torcida</a>
-    </li>
-    <li class="text-slate-700 hover:text-slate-500 py-2">
-      <a href="#times" on:click={toggleNav}>Times</a>
-    </li>
-  </ul>
-  <button on:click={toggleNav} class="p-2 text-slate-700">Menu</button>
-</nav>
+{#if type == "home"}
+  <nav
+    class="bg-white/25 fixed z-10 w-full flex items-center justify-between px-16 h-16"
+  >
+    <img class="w-12 object-contain" {src} alt="League of Byron" />
+    <ul class="flex flex-wrap items-center" class:nav-open={isNavOpen}>
+      <li class="text-slate-700 hover:text-slate-500 py-2 mr-14">
+        <a href="#mostre-sua-torcida" on:click={toggleNav}>Mostre sua torcida</a
+        >
+      </li>
+      <li class="text-slate-700 hover:text-slate-500 py-2">
+        <a href="#times" on:click={toggleNav}>Times</a>
+      </li>
+    </ul>
+    <button on:click={toggleNav} class="p-2 text-slate-700">Menu</button>
+  </nav>
+{:else}
+  <nav
+    class="bg-transparent fixed z-10 w-full flex items-center justify-start px-16 h-16"
+  >
+    <Link class="hover:brightness-110 py-2 {color}" to="/">Home</Link>
+  </nav>
+{/if}
 
 <style>
   nav {
