@@ -168,7 +168,7 @@
       class="flex flex-col w-full justify-between py-6 md:p-6 gap-6 h-[30rem] lg:h-auto"
     >
       <div
-        class="flex flex-col w-full gap-6 overflow-y-scroll overflow-x-hidden"
+        class="flex flex-col w-full gap-6 overflow-y-scroll max-h-[512px] overflow-x-hidden"
       >
         {#each messages as message (message.id)}
           <div
