@@ -1,6 +1,11 @@
 <script>
   import ButtonTeam from "../components/ButtonTeam.svelte";
   import { fly } from "svelte/transition";
+  import { onMount } from "svelte";
+
+  onMount(() => {
+    window.scrollTo(0, 0);
+  });
 
   export let team = {
     firstName: "",
@@ -71,18 +76,17 @@
   class="py-20 flex flex-col justify-center items-center px-4 h-[678px] {team
     .colors.hero}"
 >
-      <img class="h-[230px]" src="{team.logo}" alt="{team.fullName}" />
+  <img class="h-[230px]" src={team.logo} alt={team.fullName} />
 
-    {#if visible}
-        
-        <h1
-          transition:fly={{ y: 10, duration: 600 }}
-          class="mb-6 font-bold font-['Work_Sans'] text-6xl text-center max-w-4xl {team.colors.title_main}"
-        >
-          {team.fullName}
-        </h1>
-      
-    
+  {#if visible}
+    <h1
+      transition:fly={{ y: 10, duration: 600 }}
+      class="mb-6 font-bold font-['Work_Sans'] text-6xl text-center max-w-4xl {team
+        .colors.title_main}"
+    >
+      {team.fullName}
+    </h1>
+
     <p
       transition:fly={{ y: 10, duration: 600, delay: 100 }}
       class="text-slate-600 text-center text-lg mb-16 font-['Work_Sans'] font-medium"
@@ -94,12 +98,13 @@
       class="flex flex-col items-center md:flex-row"
     >
       <ButtonTeam
-        css="{team.colors.button_one}"
+        css={team.colors.button_one}
         cssId="button-heroTeam"
         href="#LastGame"
-        style="filled">Último Jogo</ButtonTeam      >
+        style="filled">Último Jogo</ButtonTeam
+      >
       <ButtonTeam
-        css="{team.colors.button_two}"
+        css={team.colors.button_two}
         cssId="button-heroTeamtwo"
         href="#Players"
         style="outline">Equipe CBLOL 2022</ButtonTeam
