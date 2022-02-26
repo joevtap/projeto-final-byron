@@ -69,12 +69,12 @@
   </h2>
 
   <div class="container flex flex-col gap-4 py-10 items-center">
-    <div class="flex flex-col md:flex-row gap-6 w-full">
+    <div class="flex flex-col grid-cols-3 justify-center items-center md:flex-row gap-6 w-full">
       <PlayerCard player={team.players.top} />
       <PlayerCard player={team.players.jg} />
       <PlayerCard player={team.players.mid} />
     </div>
-    <div class="flex flex-col text-center md:flex-row gap-6 w-full">
+    <div class="flex flex-col justify-center items-center md:flex-row gap-6 w-full">
       <PlayerCard player={team.players.bot} />
       <PlayerCard player={team.players.sup} />
     </div>
@@ -84,16 +84,16 @@
 </section>
 
 <style>
-  /* section {
+  section {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-  } */
+  }
 
-  /* @keyframes wave {
+  @keyframes wave {
     to {
       width: 360px;
       opacity: 1;
     }
-  } */
+  }
 </style>

@@ -11,11 +11,11 @@
   id="card-player"
   class="rounded-[8px] gap-4 cursor-pointer items-center py-6 px-10 border-[1px] border-slate-200 bg-slate-50"
 >
-  <img class="h-[210px] w-[278px]" src="{player.pic}" alt={player.name} />
+  <img class="h-[220px] w-[278px]" src={player.pic} alt={player.name} />
 
   <div class="flex flex-row text-center mt-10">
     <div class="mr-4">
-      <img src="{player.roleImage}" alt="{player.role}">
+      <img src={player.roleImage} alt={player.role} />
     </div>
     <div class="text-left">
       <p class="text-lg font-bold text-black">{player.name}</p>
@@ -23,7 +23,6 @@
     </div>
   </div>
 </div>
-
 
 <style>
   #card-player {
