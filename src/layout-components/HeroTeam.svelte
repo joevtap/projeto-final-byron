@@ -125,13 +125,5 @@
     overflow: hidden;
     width: 0;
     transform-origin: left;
-    animation: wave 1s forwards 200ms steps(20);
-  }
-
-  @keyframes wave {
-    to {
-      width: 360px;
-      opacity: 1;
-    }
   }
 </style>
