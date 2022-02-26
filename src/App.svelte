@@ -1,7 +1,8 @@
 <script>
   import Home from "./pages/Home.svelte";
   import Team from "./pages/Team.svelte";
-  import { Router, Route, Link } from "svelte-routing";
+  import Footer from "./layout-components/Footer.svelte";
+  import { Router, Route } from "svelte-routing";
 
   export let url = "";
 </script>
@@ -11,6 +12,7 @@
     <Route path="team/:team" let:params><Team team={params.team} /></Route>
     <Route path="/"><Home /></Route>
   </div>
+  <Footer />
 </Router>
 
 <style lang="postcss" global>

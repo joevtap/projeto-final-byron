@@ -1,5 +1,6 @@
 <script>
   import Button from "../components/Button.svelte";
+  import Navbar from "../components/Navbar.svelte";
   import { fly } from "svelte/transition";
 
   export let team = {
@@ -84,7 +85,8 @@
 
     <p
       transition:fly={{ y: 10, duration: 600, delay: 100 }}
-      class="text-slate-600 text-center text-lg mb-16 font-['Work_Sans'] font-medium"
+      class="text-slate-600 text-center text-lg mb-16 font-['Work_Sans'] font-medium {team
+        .colors.hash}"
     >
       {team.hashtag}
     </p>

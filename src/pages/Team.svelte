@@ -118,10 +118,11 @@
       colors: {
         hero: "bg-black",
         title_main: "text-white",
-        hash: "text-gray-100",
+        hash: "text-slate-100",
         button_one:
-          "bg-white text-zinc-900 hover:bg-transparent border-white border-2 text-white",
-        button_two: "text-white border-white hover:bg-white text-zinc-900",
+          "bg-white !text-zinc-900 hover:!bg-transparent border-white hover:border-2 hover:!text-white",
+        button_two:
+          "text-white border-white hover:bg-white hover:!text-zinc-900",
         grad_one: "bg-gradient-to-b from-black to-white",
         grad_two: "bg-gradient-to-b from-white to-black",
         title_lastGame: "text-white",
@@ -180,8 +181,8 @@
         title_main: "text-white",
         hash: "text-gray-100",
         button_one:
-          "bg-black text-white hover:bg-transparent border-2 border-black text-black",
-        button_two: "text-black border-black hover:bg-black text-white",
+          "bg-black !text-white hover:bg-transparent border-2 border-black hover:!text-black",
+        button_two: "!text-black border-black hover:bg-black hover:!text-white",
         grad_one: "bg-gradient-to-b from-orange-700 to-black",
         grad_two: "bg-gradient-to-b from-black to-zinc-300",
         title_lastGame: "text-black",
@@ -240,8 +241,9 @@
         title_main: "text-black",
         hash: "text-gray-500",
         button_one:
-          "bg-red-700 text-white hover:bg-transparent text-red-700 border-2 border-red-700",
-        button_two: "text-red-700 border-red-700 hover:bg-red-700 text-white",
+          "bg-red-700 text-white hover:bg-transparent hover:!text-red-700 border-2 border-red-700",
+        button_two:
+          "!text-red-700 border-red-700 hover:bg-red-700 hover:!text-white",
         grad_one: "bg-gradient-to-b from-white to-red-700",
         grad_two: "bg-gradient-to-b from-red-700 to-black",
         title_lastGame: "text-black",
@@ -300,8 +302,9 @@
         title_main: "text-black",
         hash: "text-gray-500",
         button_one:
-          "bg-red-500 text-white hover:bg-transparent text-red-500 border-2 border-red-500",
-        button_two: "text-red-500 border-red-500 hover:bg-red-500 text-white",
+          "bg-red-500 text-white hover:bg-transparent hover:!text-red-500 border-2 border-red-500",
+        button_two:
+          "!text-red-500 border-red-500 hover:bg-red-500 hover:!text-white",
         grad_one: "bg-gradient-to-b from-white to-red-500",
         grad_two: "bg-gradient-to-b from-red-500 to-black",
         title_lastGame: "text-black",
@@ -420,8 +423,8 @@
         title_main: "text-black",
         hash: "text-gray-700",
         button_one:
-          "bg-black text-white hover:bg-transparent text-black border-2 border-black",
-        button_two: "text-black border-black hover:bg-black text-white",
+          "bg-black text-white hover:bg-transparent hover:!text-black border-2 border-black",
+        button_two: "!text-black border-black hover:bg-black hover:!text-white",
         grad_one: "bg-gradient-to-b from-zinc-100 to-black",
         grad_two: "bg-gradient-to-b from-black to-zinc-100",
         title_lastGame: "text-black",
@@ -480,8 +483,9 @@
         title_main: "text-white",
         hash: "text-gray-100",
         button_one:
-          "bg-red-600 text-white hover:bg-transparent text-red-600 border-2 border-red-600",
-        button_two: "text-red-600 border-red-600 hover:bg-red-600 text-red-600",
+          "bg-red-600 text-white hover:bg-transparent hover:!text-red-600 border-2 border-red-600",
+        button_two:
+          "!text-red-600 border-red-600 hover:bg-red-600 hover:!text-white",
         grad_one: "bg-gradient-to-b from-indigo-900 to-red-600",
         grad_two: "bg-gradient-to-b from-red-600 to-white",
         title_lastGame: "text-white",
@@ -540,9 +544,9 @@
         title_main: "text-white",
         hash: "text-gray-100",
         button_one:
-          "bg-cyan-300 text-black hover:bg-transparent text-cyan-300 border-2 border-cyan-300",
+          "bg-cyan-300 !text-black hover:bg-transparent hover:!text-cyan-300 border-2 border-cyan-300",
         button_two:
-          "text-cyan-300 border-cyan-300 hover:bg-cyan-300 text-black",
+          "text-cyan-300 border-cyan-300 hover:bg-cyan-300 hover:!text-black",
         grad_one: "bg-gradient-to-b from-black to-cyan-300",
         grad_two: "bg-gradient-to-b from-cyan-300 to-black",
         title_lastGame: "text-white",
@@ -601,9 +605,9 @@
         title_main: "text-yellow-500",
         hash: "text-sky-500",
         button_one:
-          "bg-yellow-500 text-blue-800 hover:bg-transparent border-2 border-yellow-500 text-yellow-500",
+          "bg-yellow-500 !text-blue-800 hover:bg-transparent border-2 border-yellow-500 hover:!text-yellow-500",
         button_two:
-          "text-yellow-500 border-yellow-500 hover:bg-yellow-500 text-zinc-900",
+          "text-yellow-500 border-yellow-500 hover:bg-yellow-500 hover:!text-blue-800",
         grad_one: "bg-gradient-to-b from-blue-800 to-sky-500",
         grad_two: "bg-gradient-to-b from-sky-500 to-blue-800",
         title_lastGame: "text-black",
