@@ -39,7 +39,8 @@
   <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content">
       <div class="modal-header">
-        <h3 class="modal-title" id="exampleModalLabel">{team.name}</h3>
+        <img class="h-10 mr-2" src={team.image} alt={team.name} />
+        <h3 class="modal-title font-bold" id="exampleModalLabel">{team.name}</h3>
         <button
           type="button"
           class="btn-close"
@@ -48,10 +49,14 @@
         />
       </div>
       <div class="modal-body">
-        <div>
-          <img src={team.image} alt={team.name} />
-          <p>{team.description}</p>
-        </div>
+        <iframe
+          class="container aspect-video"
+          src={team.description}
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        />
       </div>
       <div class="modal-footer">
         <a
