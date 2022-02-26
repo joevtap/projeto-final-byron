@@ -1,11 +1,14 @@
 <script>
   export let team = "";
+  import HeroTeam from "../layout-components/HeroTeam.svelte";
+  import LastGame from "../layout-components/LastGame.svelte";
+  import Players from "../layout-components/Players.svelte";
   import Button from "../components/Button.svelte";
 
   let teams = {
     // LOUD
     LLL: {
-      firstName: "LOUD!",
+      firstName: "LOUD",
       fullName: "LOUD",
       hashtag: "#GOLOUD",
       logo: "../assets/loud.png",
@@ -46,18 +49,18 @@
         twitter: "https://twitter.com/LOUDgg",
         youtube: "https://www.youtube.com/loudgg",
       },
-      lastGame: "https://youtu.be/76EPyA_Ci64",
+      lastGame: "https://www.youtube.com/embed/76EPyA_Ci64",
       backgroundPattern: "../assets/LOUD/p_loud.svg",
       colors: {
         hero: "bg-black",
         title_main: "text-white",
         hash: "text-gray-100",
-        button_one: "bg-lime-400 text-black",
-        button_two: "text-lime-400 border-lime-400",
+        button_one: "bg-lime-400 text-black hover:bg-transparent text-lime-400 border-solid border-2 border-lime-400",
+        button_two: "text-lime-400 border-lime-400 hover:bg-lime-400 text-white border-lime-400",
         grad_one: "bg-gradient-to-b from-black to-white",
         grad_two: "bg-gradient-to-b from-white to-black",
         title_lastGame: "text-lime-400",
-        conteudo_lastGame: "text-black",
+        conteudo_lastGame: "preto",
         title_players: "bg-black text-lime-400 rounded-md",
       },
     },
@@ -105,18 +108,18 @@
         twitter: "https://twitter.com/furia",
         youtube: "https://www.youtube.com/FURIAgg",
       },
-      lastGame: "https://youtu.be/76EPyA_Ci64",
+      lastGame: "https://www.youtube.com/embed/76EPyA_Ci64",
       backgroundPattern: "../assets/FURIA/p_furia.svg",
       colors: {
         hero: "bg-black",
         title_main: "text-white",
         hash: "text-gray-100",
-        button_one: "bg-white text-black",
-        button_two: "text-white border-white",
+        button_one: "bg-white text-black hover:bg-transparent border-white border-2",
+        button_two: "text-white border-white hover:bg-white text-black",
         grad_one: "bg-gradient-to-b from-black to-white",
         grad_two: "bg-gradient-to-b from-white to-black",
         title_lastGame: "text-white",
-        conteudo_lastGame: "text-black",
+        conteudo_lastGame: "preto",
         title_players: "bg-white text-black rounded-md",
       },
     },
@@ -164,18 +167,18 @@
         twitter: "https://twitter.com/KaBuMESports",
         youtube: "https://www.youtube.com/kabumesports",
       },
-      lastGame: "https://youtu.be/MZmSIkUUihU",
+      lastGame: "https://www.youtube.com/embed/MZmSIkUUihU",
       backgroundPattern: "../assets/KABUM/p_kabum.svg",
       colors: {
         hero: "bg-orange-700",
         title_main: "text-white",
         hash: "text-gray-100",
-        button_one: "bg-black text-white",
-        button_two: "text-black border-black",
+        button_one: "bg-black text-white hover:bg-transparent border-2 border-black text-black",
+        button_two: "text-black border-black hover:bg-black text-white",
         grad_one: "bg-gradient-to-b from-orange-700 to-black",
         grad_two: "bg-gradient-to-b from-black to-zinc-300",
         title_lastGame: "text-black",
-        conteudo_lastGame: "text-white",
+        conteudo_lastGame: "branco",
         title_players: "bg-white text-orange-700 rounded-md",
       },
     },
@@ -223,7 +226,7 @@
         twitter: "https://twitter.com/flaesports",
         youtube: "https://www.youtube.com/channel/UCqN_gtT3fqdn4KXdLLSqaHQ",
       },
-      lastGame: "https://youtu.be/W25sM_D4ExU",
+      lastGame: "https://www.youtube.com/embed/W25sM_D4ExU",
       backgroundPattern: "../assets/FLAMENGO/p_fla.svg",
       colors: {
         hero: "bg-white",
@@ -234,7 +237,7 @@
         grad_one: "bg-gradient-to-b from-white to-red-700",
         grad_two: "bg-gradient-to-b from-red-700 to-black",
         title_lastGame: "text-black",
-        conteudo_lastGame: "text-black",
+        conteudo_lastGame: "preto",
         title_players: "bg-white text-red-700 rounded-md",
       },
     },
@@ -282,7 +285,7 @@
         twitter: "https://twitter.com/paiNGamingBR",
         youtube: "https://www.youtube.com/c/paingamingbr",
       },
-      lastGame: "https://youtu.be/thd8FBXbasY",
+      lastGame: "https://www.youtube.com/embed/thd8FBXbasY",
       backgroundPattern: "../assets/PAIN/p_pain.svg",
       colors: {
         hero: "bg-white",
@@ -293,7 +296,7 @@
         grad_one: "bg-gradient-to-b from-white to-red-500",
         grad_two: "bg-gradient-to-b from-red-500 to-black",
         title_lastGame: "text-black",
-        conteudo_lastGame: "text-black",
+        conteudo_lastGame: "preto",
         title_players: "bg-white text-red-500 rounded-md",
       },
     },
@@ -341,7 +344,7 @@
         twitter: "https://twitter.com/REDCanids",
         youtube: "https://www.youtube.com/RedCanidsBR",
       },
-      lastGame: "https://youtu.be/Tf7ed7mi2rI",
+      lastGame: "https://www.youtube.com/embed/Tf7ed7mi2rI",
       backgroundPattern: "../assets/RED/p_red.svg",
       colors: {
         hero: "bg-black",
@@ -352,7 +355,7 @@
         grad_one: "bg-gradient-to-b from-black to-red-800",
         grad_two: "bg-gradient-to-b from-red-800 to-black",
         title_lastGame: "text-white",
-        conteudo_lastGame: "text-white",
+        conteudo_lastGame: "branco",
         title_players: "bg-white text-red-800 rounded-md",
       },
     },
@@ -400,7 +403,7 @@
         twitter: "https://twitter.com/intz",
         youtube: "https://www.youtube.com/user/INTZeSports",
       },
-      lastGame: "https://youtu.be/MZmSIkUUihU",
+      lastGame: "https://www.youtube.com/embed/MZmSIkUUihU",
       backgroundPattern: "../assets/INTZ/p_intz.svg",
       colors: {
         hero: "bg-zinc-100",
@@ -411,7 +414,7 @@
         grad_one: "bg-gradient-to-b from-zinc-100 to-black",
         grad_two: "bg-gradient-to-b from-black to-zinc-100",
         title_lastGame: "text-black",
-        conteudo_lastGame: "text-white",
+        conteudo_lastGame: "branco",
         title_players: "bg-white text-black rounded-md",
       },
     },
@@ -459,7 +462,7 @@
         twitter: "https://twitter.com/minersgg",
         youtube: "https://www.youtube.com/channel/UCNH_VIASvRytiiUzEbS5lgA",
       },
-      lastGame: "https://youtu.be/W25sM_D4ExU",
+      lastGame: "https://www.youtube.com/embed/W25sM_D4ExU",
       backgroundPattern: "../assets/MINERS/p_miners.svg",
       colors: {
         hero: "bg-indigo-900",
@@ -470,7 +473,7 @@
         grad_one: "bg-gradient-to-b from-indigo-900 to-red-600",
         grad_two: "bg-gradient-to-b from-red-600 to-white",
         title_lastGame: "text-white",
-        conteudo_lastGame: "text-white",
+        conteudo_lastGame: "branco",
         title_players: "bg-white text-indigo-900 rounded-md",
       },
     },
@@ -518,7 +521,7 @@
         twitter: "https://twitter.com/libertyesports",
         youtube: "https://www.youtube.com/c/libertyesports",
       },
-      lastGame: "https://youtu.be/thd8FBXbasY",
+      lastGame: "https://www.youtube.com/embed/thd8FBXbasY",
       backgroundPattern: "../assets/LIBERTY/p_liberty.svg",
       colors: {
         hero: "bg-blue-900",
@@ -529,7 +532,7 @@
         grad_one: "bg-gradient-to-b from-blue-900 to-cyan-300",
         grad_two: "bg-gradient-to-b from-cyan-300 to-blue-900",
         title_lastGame: "text-white",
-        conteudo_lastGame: "text-black",
+        conteudo_lastGame: "preto",
         title_players: "bg-white text-blue-900 rounded-md",
       },
     },
@@ -577,7 +580,7 @@
         twitter: "https://twitter.com/Rensgaesports",
         youtube: "https://www.youtube.com/channel/UCnEeud3Cq4dqAbKknbzWkkA",
       },
-      lastGame: "https://youtu.be/Tf7ed7mi2rI",
+      lastGame: "https://www.youtube.com/embed/Tf7ed7mi2rI",
       backgroundPattern: "../assets/RENSGA/p_rensga.svg",
       colors: {
         hero: "bg-blue-800",
@@ -588,14 +591,18 @@
         grad_one: "bg-gradient-to-b from-blue-800 to-sky-500",
         grad_two: "bg-gradient-to-b from-sky-500 to-blue-800",
         title_lastGame: "text-black",
-        conteudo_lastGame: "text-white",
+        conteudo_lastGame: "branco",
         title_players: "bg-white text-blue-800 rounded-md",
       },
     },
   };
 </script>
 
-<h1 class="text-6xl">{team}</h1>
+<HeroTeam team={teams[team]}/>
+<LastGame team={teams[team]}/>
+<Players team={teams[team]}/>
+
+<!-- <h1 class="text-6xl">{team}</h1>
 <Button
   style="filled"
   href="."
@@ -604,4 +611,4 @@
 
 <img src={teams[team].logo} alt={teams[team].logo} />
 
-<iframe width="560" height="315" src="{teams[team].lastGame}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="{teams[team].lastGame}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
