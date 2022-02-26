@@ -68,15 +68,15 @@
     Equipe titular {team.firstName} CBLOL 2022
   </h2>
 
-  <div class="container flex flex-col gap-6 py-10 items-center">
+  <div class="container flex flex-col gap-4 py-10 items-center">
     <div class="flex flex-col md:flex-row gap-6 w-full">
-      <PlayerCard team={team.players.top} />
-      <PlayerCard team={team.players.jg} />
-      <PlayerCard team={team.players.mid} />
+      <PlayerCard player={team.players.top} />
+      <PlayerCard player={team.players.jg} />
+      <PlayerCard player={team.players.mid} />
     </div>
-    <div class="flex flex-col md:flex-row gap-6 w-full">
-      <PlayerCard team={team.players.bot} />
-      <PlayerCard team={team.players.sup} />
+    <div class="flex flex-col text-center md:flex-row gap-6 w-full">
+      <PlayerCard player={team.players.bot} />
+      <PlayerCard player={team.players.sup} />
     </div>
   </div>
 

@@ -1,5 +1,5 @@
 <script>
-  import Button from "../components/Button.svelte";
+  import ButtonTeam from "../components/ButtonTeam.svelte";
   import { fly } from "svelte/transition";
 
   export let team = {
@@ -93,16 +93,16 @@
       transition:fly={{ y: 10, duration: 600, delay: 200 }}
       class="flex flex-col items-center md:flex-row"
     >
-      <Button
-        css={team.colors.button_one}
-        cssId="button-hero"
+      <ButtonTeam
+        css="{team.colors.button_one}"
+        cssId="button-heroTeam"
         href="#LastGame"
-        style="filled">Último Jogo</Button
-      >
-      <Button
-        css={team.colors.button_two}
+        style="filled">Último Jogo</ButtonTeam      >
+      <ButtonTeam
+        css="{team.colors.button_two}"
+        cssId="button-heroTeamtwo"
         href="#Players"
-        style="outline">Equipe CBLOL 2022</Button
+        style="outline">Equipe CBLOL 2022</ButtonTeam
       >
     </div>
   {/if}

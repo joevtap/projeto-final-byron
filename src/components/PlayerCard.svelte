@@ -9,18 +9,19 @@
 
 <div
   id="card-player"
-  class="w-[348px] flex-grow-1 rounded-[8px] gap-4 cursor-pointer flex flex-row items-center py-6 px-10 border-[1px] border-slate-200 bg-slate-50"
+  class="rounded-[8px] gap-4 cursor-pointer items-center py-6 px-10 border-[1px] border-slate-200 bg-slate-50"
 >
-  <img class="h-[210px]" src="{player.pic}" alt={player.name} />
+  <img class="h-[210px] w-[278px]" src="{player.pic}" alt={player.name} />
 
-  <div>
-    <img src="{player.roleImage}" alt="{player.role}">
+  <div class="flex flex-row text-center mt-10">
+    <div class="mr-4">
+      <img src="{player.roleImage}" alt="{player.role}">
+    </div>
+    <div class="text-left">
+      <p class="text-lg font-bold text-black">{player.name}</p>
+      <p class="text-sm font-normal text-slate-600">{player.role}</p>
+    </div>
   </div>
-  <div>
-    <p class="text-lg font-bold text-black">{player.name}</p>
-    <p class="text-sm font-normal text-slate-600">{player.role}</p>
-  </div>
-
 </div>
 
 
