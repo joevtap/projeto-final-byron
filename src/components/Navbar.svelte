@@ -4,7 +4,6 @@
 
   function toggleNav() {
     isNavOpen = !isNavOpen;
-    console.log("Click");
   }
 </script>
 

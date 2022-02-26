@@ -9,11 +9,15 @@
 
 <div
   id="card-player"
-  class="rounded-[8px] gap-4 cursor-pointer items-center py-6 px-10 border-[1px] border-slate-200 bg-slate-50"
+  class="rounded-[8px] gap-4 items-center py-6 px-10 border-[1px] border-slate-200 bg-slate-50"
 >
-  <img class="h-[220px] w-[278px]" src={player.pic} alt={player.name} />
+  <img
+    class="h-[220px] w-[278px] min-w-[278px]"
+    src={player.pic}
+    alt={player.name}
+  />
 
-  <div class="flex flex-row text-center mt-10">
+  <div class="flex flex-row items-center justify-center mt-10">
     <div class="mr-4">
       <img src={player.roleImage} alt={player.role} />
     </div>

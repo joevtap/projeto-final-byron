@@ -1,5 +1,4 @@
 <script>
-
   export let team = {
     firstName: "",
     fullName: "",
@@ -57,39 +56,57 @@
       title_players: "",
     },
   };
-
 </script>
 
-<section id="LastGame" class="py-20 flex flex-col justify-center items-center px-4 {team.colors.grad_one}">
-    <h1
-      class="mb-6 font-bold font-['Work_Sans'] text-4xl text-center max-w-6xl {team.colors.title_lastGame}"
-    >
-      Último Jogo
-    </h1>
+<section
+  id="LastGame"
+  class="py-20 flex flex-col justify-center items-center px-4 {team.colors
+    .grad_one}"
+>
+  <h1
+    class="mb-6 font-bold font-['Work_Sans'] text-4xl text-center max-w-6xl {team
+      .colors.title_lastGame}"
+  >
+    Último Jogo
+  </h1>
 
-      <iframe width="1000" height="550" src="{team.lastGame}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    
+  <iframe
+    src={team.lastGame}
+    title="YouTube video player"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen
+    class="container aspect-video"
+  />
 
-    
-    {#if team.colors.conteudo_lastGame == "preto"}
-      <div class="flex items-center py-10 space-x-20">
-        <a href="{team.mediaUrls.instagram}"><img src="../assets/Instagram.png" alt=""></a>
-        <a href="{team.mediaUrls.twitter}"><img src="../assets/Twitter.png" alt=""></a>
-        <a href="{team.mediaUrls.youtube}"><img src="../assets/Youtube.png" alt=""></a>
-      </div>
-    {:else if team.colors.conteudo_lastGame == "branco"}
-      <div class="flex items-center py-10 space-x-20">
-        <a href="{team.mediaUrls.instagram}"><img src="../assets/Instagramb.png" alt=""></a>
-        <a href="{team.mediaUrls.twitter}"><img src="../assets/Twitterb.png" alt=""></a>
-        <a href="{team.mediaUrls.youtube}"><img src="../assets/Youtubeb.png" alt=""></a>
-      </div>
-    {/if}
-    
-
+  {#if team.colors.conteudo_lastGame == "preto"}
+    <div class="flex items-center py-10 space-x-20">
+      <a href={team.mediaUrls.instagram}
+        ><img src="../assets/Instagram.png" alt="" /></a
+      >
+      <a href={team.mediaUrls.twitter}
+        ><img src="../assets/Twitter.png" alt="" /></a
+      >
+      <a href={team.mediaUrls.youtube}
+        ><img src="../assets/Youtube.png" alt="" /></a
+      >
+    </div>
+  {:else if team.colors.conteudo_lastGame == "branco"}
+    <div class="flex items-center py-10 space-x-20">
+      <a href={team.mediaUrls.instagram}
+        ><img src="../assets/Instagramb.png" alt="" /></a
+      >
+      <a href={team.mediaUrls.twitter}
+        ><img src="../assets/Twitterb.png" alt="" /></a
+      >
+      <a href={team.mediaUrls.youtube}
+        ><img src="../assets/Youtubeb.png" alt="" /></a
+      >
+    </div>
+  {/if}
 </section>
 
 <style>
-
   @keyframes wave {
     to {
       width: 360px;

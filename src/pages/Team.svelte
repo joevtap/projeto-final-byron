@@ -59,10 +59,9 @@
         hero: "bg-black",
         title_main: "text-white",
         hash: "text-gray-100",
-        button_one:
-          "bg-lime-400 text-black hover:bg-transparent text-lime-400 border-solid border-2 border-lime-400",
+        button_one: "bg-lime-400 hover:bg-lime-300 !text-black",
         button_two:
-          "text-lime-400 border-lime-400 hover:bg-lime-400 text-white border-lime-400",
+          "!text-lime-400 border-lime-400 hover:bg-lime-400 hover:!text-black border-lime-400",
         grad_one: "bg-gradient-to-b from-black to-white",
         grad_two: "bg-gradient-to-b from-white to-black",
         title_lastGame: "text-lime-400",
