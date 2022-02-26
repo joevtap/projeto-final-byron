@@ -3,7 +3,11 @@
   import HeroTeam from "../layout-components/HeroTeam.svelte";
   import LastGame from "../layout-components/LastGame.svelte";
   import Players from "../layout-components/Players.svelte";
-  import Button from "../components/Button.svelte";
+  import { onMount } from "svelte";
+
+  onMount(() => {
+    window.scrollTo(0, 0);
+  });
 
   let teams = {
     // LOUD
@@ -55,8 +59,10 @@
         hero: "bg-black",
         title_main: "text-white",
         hash: "text-gray-100",
-        button_one: "bg-lime-400 text-black hover:bg-transparent text-lime-400 border-solid border-2 border-lime-400",
-        button_two: "text-lime-400 border-lime-400 hover:bg-lime-400 text-white border-lime-400",
+        button_one:
+          "bg-lime-400 text-black hover:bg-transparent text-lime-400 border-solid border-2 border-lime-400",
+        button_two:
+          "text-lime-400 border-lime-400 hover:bg-lime-400 text-white border-lime-400",
         grad_one: "bg-gradient-to-b from-black to-white",
         grad_two: "bg-gradient-to-b from-white to-black",
         title_lastGame: "text-lime-400",
@@ -114,7 +120,8 @@
         hero: "bg-black",
         title_main: "text-white",
         hash: "text-gray-100",
-        button_one: "bg-white text-zinc-900 hover:bg-transparent border-white border-2 text-white",
+        button_one:
+          "bg-white text-zinc-900 hover:bg-transparent border-white border-2 text-white",
         button_two: "text-white border-white hover:bg-white text-zinc-900",
         grad_one: "bg-gradient-to-b from-black to-white",
         grad_two: "bg-gradient-to-b from-white to-black",
@@ -173,7 +180,8 @@
         hero: "bg-orange-700",
         title_main: "text-white",
         hash: "text-gray-100",
-        button_one: "bg-black text-white hover:bg-transparent border-2 border-black text-black",
+        button_one:
+          "bg-black text-white hover:bg-transparent border-2 border-black text-black",
         button_two: "text-black border-black hover:bg-black text-white",
         grad_one: "bg-gradient-to-b from-orange-700 to-black",
         grad_two: "bg-gradient-to-b from-black to-zinc-300",
@@ -232,7 +240,8 @@
         hero: "bg-white",
         title_main: "text-black",
         hash: "text-gray-500",
-        button_one: "bg-red-700 text-white hover:bg-transparent text-red-700 border-2 border-red-700",
+        button_one:
+          "bg-red-700 text-white hover:bg-transparent text-red-700 border-2 border-red-700",
         button_two: "text-red-700 border-red-700 hover:bg-red-700 text-white",
         grad_one: "bg-gradient-to-b from-white to-red-700",
         grad_two: "bg-gradient-to-b from-red-700 to-black",
@@ -291,7 +300,8 @@
         hero: "bg-white",
         title_main: "text-black",
         hash: "text-gray-500",
-        button_one: "bg-red-500 text-white hover:bg-transparent text-red-500 border-2 border-red-500",
+        button_one:
+          "bg-red-500 text-white hover:bg-transparent text-red-500 border-2 border-red-500",
         button_two: "text-red-500 border-red-500 hover:bg-red-500 text-white",
         grad_one: "bg-gradient-to-b from-white to-red-500",
         grad_two: "bg-gradient-to-b from-red-500 to-black",
@@ -350,7 +360,8 @@
         hero: "bg-black",
         title_main: "text-white",
         hash: "text-gray-100",
-        button_one: "bg-red-500 text-white hover:bg-transparent text-red-500 border-2 border-red-500",
+        button_one:
+          "bg-red-500 text-white hover:bg-transparent text-red-500 border-2 border-red-500",
         button_two: "text-red-500 border-red-500 hover:bg-red-500 text-white",
         grad_one: "bg-gradient-to-b from-black to-red-800",
         grad_two: "bg-gradient-to-b from-red-800 to-black",
@@ -409,7 +420,8 @@
         hero: "bg-zinc-100",
         title_main: "text-black",
         hash: "text-gray-700",
-        button_one: "bg-black text-white hover:bg-transparent text-black border-2 border-black",
+        button_one:
+          "bg-black text-white hover:bg-transparent text-black border-2 border-black",
         button_two: "text-black border-black hover:bg-black text-white",
         grad_one: "bg-gradient-to-b from-zinc-100 to-black",
         grad_two: "bg-gradient-to-b from-black to-zinc-100",
@@ -468,7 +480,8 @@
         hero: "bg-indigo-900",
         title_main: "text-white",
         hash: "text-gray-100",
-        button_one: "bg-red-600 text-white hover:bg-transparent text-red-600 border-2 border-red-600",
+        button_one:
+          "bg-red-600 text-white hover:bg-transparent text-red-600 border-2 border-red-600",
         button_two: "text-red-600 border-red-600 hover:bg-red-600 text-red-600",
         grad_one: "bg-gradient-to-b from-indigo-900 to-red-600",
         grad_two: "bg-gradient-to-b from-red-600 to-white",
@@ -527,8 +540,10 @@
         hero: "bg-black",
         title_main: "text-white",
         hash: "text-gray-100",
-        button_one: "bg-cyan-300 text-black hover:bg-transparent text-cyan-300 border-2 border-cyan-300",
-        button_two: "text-cyan-300 border-cyan-300 hover:bg-cyan-300 text-black",
+        button_one:
+          "bg-cyan-300 text-black hover:bg-transparent text-cyan-300 border-2 border-cyan-300",
+        button_two:
+          "text-cyan-300 border-cyan-300 hover:bg-cyan-300 text-black",
         grad_one: "bg-gradient-to-b from-black to-cyan-300",
         grad_two: "bg-gradient-to-b from-cyan-300 to-black",
         title_lastGame: "text-white",
@@ -586,8 +601,10 @@
         hero: "bg-blue-800",
         title_main: "text-yellow-500",
         hash: "text-sky-500",
-        button_one: "bg-yellow-500 text-blue-800 hover:bg-transparent border-2 border-yellow-500 text-yellow-500",
-        button_two: "text-yellow-500 border-yellow-500 hover:bg-yellow-500 text-zinc-900",
+        button_one:
+          "bg-yellow-500 text-blue-800 hover:bg-transparent border-2 border-yellow-500 text-yellow-500",
+        button_two:
+          "text-yellow-500 border-yellow-500 hover:bg-yellow-500 text-zinc-900",
         grad_one: "bg-gradient-to-b from-blue-800 to-sky-500",
         grad_two: "bg-gradient-to-b from-sky-500 to-blue-800",
         title_lastGame: "text-black",
@@ -598,17 +615,6 @@
   };
 </script>
 
-<HeroTeam team={teams[team]}/>
-<LastGame team={teams[team]}/>
-<Players team={teams[team]}/>
-
-<!-- <h1 class="text-6xl">{team}</h1>
-<Button
-  style="filled"
-  href="."
-  css={`${teams[team].colors.button} hover:bg-green-400`}>Clique aqui</Button
->
-
-<img src={teams[team].logo} alt={teams[team].logo} />
-
-<iframe width="560" height="315" src="{teams[team].lastGame}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+<HeroTeam team={teams[team]} />
+<LastGame team={teams[team]} />
+<Players team={teams[team]} />
